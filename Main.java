@@ -1,15 +1,26 @@
+import java.util.Scanner;
 /**
  *
- * @author 
+ * @ThomasQuigley 
  */
 public class Main {
 
-  /**
-   * The method that is executed when you hit the run button.
-   * @param args the command line arguments
-   */
+ 
   public static void main(String[] args) {
-    // TODO code application logic here
-    
+    // create the scanner
+    Scanner input = new Scanner(System.in);
+
+    // ask for their two numbers
+    System.out.println("Please enter in two integers, on seperate lines, to divide");
+    int firstNumber = input.nextInt();
+    int secondNumber = input.nextInt();
+
+    // calculate the quotient and the remainder
+    int quotient = firstNumber / secondNumber;
+    int remainder = firstNumber % secondNumber;
+
+    // tell them their new numbers
+    System.out.println(firstNumber + "/" + secondNumber + " is " + quotient + " with a remainder of " + remainder);
+
   }
 }
