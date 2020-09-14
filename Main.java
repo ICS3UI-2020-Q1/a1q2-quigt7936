@@ -20,7 +20,7 @@ public class Main {
     int remainder = firstNumber % secondNumber;
 
     // tell them their new numbers
-    System.out.println(firstNumber + "/" + secondNumber + " is " + quotient + " with a remainder of " + remainder);
+    System.out.println(firstNumber + "/" + secondNumber + " is " + quotient + " with a remainder of " + remainder + ".");
 
   }
 }
